@@ -1,5 +1,5 @@
 function Upload() {
-    return ( <h2>Scanner</h2> );
+    return ( <h2>Scanner page</h2> );
 }
 
 export default Upload;
