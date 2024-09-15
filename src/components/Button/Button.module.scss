@@ -1,0 +1,35 @@
+.wrapper{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF5D31;
+    height: 60px;
+    column-gap: 4px;
+    font-weight: 510;
+    padding: 10px 20px;
+    border: 1px solid #FF5D31;
+    border-radius: 8px;
+    transition: .3s;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+    }
+
+    & + .wrapper{
+        margin-left: 20px;
+    }
+}
+
+.outline{
+    background-color: rgba($color: #F9F3EF, $alpha: 0.5);
+}
+
+.primary{
+    color: #fff;
+    background-color: #FF5D31;
+}
+
+.medium{
+    height: 50px;
+    width: 150px;
+}

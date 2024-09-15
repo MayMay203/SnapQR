@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styles from './Scanner.module.scss'
 import classNames from 'classnames/bind'
 import { config } from '~/config'
@@ -6,6 +5,7 @@ import { GenerateIcon } from '~/assets/icons'
 import UploadQRCode from '~/components/UploadQRCode'
 import ScannerQRCode from '~/components/ScannerQRCode'
 import { useState } from 'react'
+import Button from '~/components/Button'
 
 const cx = classNames.bind(styles)
 function Scanner() {
@@ -23,10 +23,9 @@ function Scanner() {
       </div>
       {type === 'Upload' ? <UploadQRCode /> : <ScannerQRCode />}
       <div className={cx('link-wrapper')}>
-        <Link to={config.routes.create} className={cx('generate-link')}>
-          <GenerateIcon />
+        <Button to={config.routes.create} leftIcon={<GenerateIcon />} className={cx('generate-link')} outline>
           Generate QR Code
-        </Link>
+        </Button>
       </div>
     </div>
   )
