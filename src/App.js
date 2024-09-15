@@ -1,7 +1,8 @@
 import { BrowserRouter as Router } from 'react-router-dom'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import {publicRoutes} from './routes'
 import DefaultLayout from './Layout/DefaultLayout'
+import { config } from './config'
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
               ></Route>
             )
           })}
+          <Route path="/" element={<Navigate to={config.routes.scanner} />}></Route>
         </Routes>
       </Router>
     </div>
