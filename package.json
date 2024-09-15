@@ -36,6 +36,8 @@
     ]
   },
   "devDependencies": {
+    "classnames": "^2.5.1",
+    "react-router-dom": "^6.26.2",
     "sass": "^1.78.0"
   }
 }
