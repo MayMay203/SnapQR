@@ -1,7 +1,7 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import {publicRoutes} from './routes'
-import DefaultLayout from './Layout/DefaultLayout'
+import {DefaultLayout} from './Layout'
 import { config } from './config'
 function App() {
   return (
