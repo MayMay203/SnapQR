@@ -1,11 +1,8 @@
 import styles from './Scanner.module.scss'
 import classNames from 'classnames/bind'
-import { config } from '~/config'
-import { GenerateIcon } from '~/assets/icons'
 import UploadQRCode from '~/components/UploadQRCode'
 import ScannerQRCode from '~/components/ScannerQRCode'
 import { useState } from 'react'
-import Button from '~/components/Button'
 
 const cx = classNames.bind(styles)
 function Scanner() {

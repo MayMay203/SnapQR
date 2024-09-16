@@ -3,13 +3,11 @@ import classNames from 'classnames/bind'
 import { Html5QrcodeScanner } from 'html5-qrcode'
 import { useEffect, useRef, useState } from 'react'
 import Button from '../Button'
-import { useNavigate } from 'react-router-dom'
 
 const cx = classNames.bind(styles)
 function ScannerQRCode() {
   const [result, setResult] = useState('')
   const scannerRef = useRef(null)
-  const navigate = useNavigate()
 
   useEffect(() => {
     function onScanSuccess(decodedText, decodedResult) {
