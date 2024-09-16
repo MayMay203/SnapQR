@@ -1,1 +1,1 @@
-export { GenerateIcon, UploadIcon, CameraIcon } from './Icon'
+export { GenerateIcon, UploadIcon, CameraIcon, CheckIcon } from './Icon'
