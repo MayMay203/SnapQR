@@ -76,3 +76,7 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
+
+ #html5-qrcode-anchor-scan-type-change {
+    display: none!important;
+  }
