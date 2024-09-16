@@ -22,11 +22,6 @@ function Scanner() {
         </span>
       </div>
       {type === 'Upload' ? <UploadQRCode /> : <ScannerQRCode />}
-      <div className={cx('link-wrapper')}>
-        <Button to={config.routes.create} leftIcon={<GenerateIcon />} className={cx('generate-link')} outline>
-          Generate QR Code
-        </Button>
-      </div>
     </div>
   )
 }

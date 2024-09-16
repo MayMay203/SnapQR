@@ -63,6 +63,10 @@ body{
 	color: #656689;
 }
 
+button, input{
+	outline: none;
+}
+
 input,
 textarea,
 select,
