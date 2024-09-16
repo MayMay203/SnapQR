@@ -1,5 +1,4 @@
 const images = {
-  logo: require('./logo.png'),
-  qrcodeDefault: require('./QR-Code-Default.png')
+  logo: require('./logo.png')
 }
 export default images
